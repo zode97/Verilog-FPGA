@@ -1,0 +1,13 @@
+//----------------------------------------
+module part2(SW,LEDR,LEDG);
+	input [17:0]SW;
+	output [17:0]LEDR;
+	output [7:0]LEDG;
+	assign LEDR = SW;
+	assign LEDG[7:0] = (SW[17] == 0 )?SW[7:0]:SW[15:8] ;
+	assign x = SW[7:0]
+	assign y = Sw[15:0];
+	assign m = LEDG[7:0];
+	assign m = (~s & x) | (s & y)
+endmodule
+//----------------------------------------

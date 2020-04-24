@@ -1,0 +1,23 @@
+// Your Comments Go Here
+module part4( HEX0, SW, LEDR);
+	input [2:0] SW;
+	output [2:0] LEDR;	
+	output reg [6:0]HEX0;
+	reg a;
+	assign LEDR = SW;
+	initial begin
+		if (SW==3'b000) 
+			a = 7'b0001001; //h
+		else if (SW == 3'b001) begin
+			a = 7'b0000110; //e
+		end else if (SW == 3'b010) begin
+			a = 7'b0001111; //l
+		end else
+			a = 7'b0001000; //o
+	end
+	always @* begin
+  		$display("%b",c);
+	end
+	assign HEX0 = a;
+	
+endmodule 

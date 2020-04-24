@@ -1,0 +1,59 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/sakhm/Desktop/TCES330/HW1/Part2
+vMux_4w_2_to_1_testbench
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1587626520
+!i10b 1
+!s100 G;AGcSY2BQJW[WPJAHdM90
+I<hzeeZHCfz@^7WiLTDNo^3
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+!s105 Mux_4w_2_to_1_sv_unit
+S1
+R0
+w1587626442
+8C:/Users/sakhm/Desktop/TCES330/HW1/Part2/Mux_4w_2_to_1.sv
+FC:/Users/sakhm/Desktop/TCES330/HW1/Part2/Mux_4w_2_to_1.sv
+L0 2
+Z4 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z5 !s108 1587626520.000000
+!s107 C:/Users/sakhm/Desktop/TCES330/HW1/Part2/Mux_4w_2_to_1.sv|
+!s90 -reportprogress|300|-work|work|C:/Users/sakhm/Desktop/TCES330/HW1/Part2/Mux_4w_2_to_1.sv|
+!i113 1
+Z6 o-work work
+Z7 tCvgOpt 0
+n@mux_4w_2_to_1_testbench
+vpart2
+R1
+R2
+!i10b 1
+!s100 UD6=z[4R6;44XIaVSXQe:0
+IWEz42YilCdfdJCMhA6kn80
+R3
+!s105 part2_sv_unit
+S1
+R0
+w1587600854
+8C:/Users/sakhm/Desktop/TCES330/HW1/Part2/part2.sv
+FC:/Users/sakhm/Desktop/TCES330/HW1/Part2/part2.sv
+L0 2
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/sakhm/Desktop/TCES330/HW1/Part2/part2.sv|
+!s90 -reportprogress|300|-work|work|C:/Users/sakhm/Desktop/TCES330/HW1/Part2/part2.sv|
+!i113 1
+R6
+R7

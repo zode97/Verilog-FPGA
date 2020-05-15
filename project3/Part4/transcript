@@ -1,0 +1,51 @@
+# Reading C:/intelFPGA_lite/17.0/modelsim_ase/tcl/vsim/pref.tcl
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:29:57 on May 10,2020
+# vlog -reportprogress 300 ./Timer_1s.sv 
+# -- Compiling module Timer_1s
+# -- Compiling module timer_tb
+# 
+# Top level modules:
+# 	timer_tb
+# End time: 20:29:57 on May 10,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work timer_tb 
+# Start time: 20:29:57 on May 10,2020
+# Loading sv_std.std
+# Loading work.timer_tb
+# Loading work.Timer_1s
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./Timer_1s.sv(34)
+#    Time: 600 ns  Iteration: 0  Instance: /timer_tb
+# Break in Module timer_tb at ./Timer_1s.sv line 34
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:31:20 on May 10,2020
+# vlog -reportprogress 300 ./Timer_1s.sv 
+# -- Compiling module Timer_1s
+# -- Compiling module timer_tb
+# 
+# Top level modules:
+# 	timer_tb
+# End time: 20:31:20 on May 10,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 20:31:30 on May 10,2020, Elapsed time: 0:01:33
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work timer_tb 
+# Start time: 20:31:30 on May 10,2020
+# Loading sv_std.std
+# Loading work.timer_tb
+# Loading work.Timer_1s
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./Timer_1s.sv(34)
+#    Time: 600 ps  Iteration: 0  Instance: /timer_tb
+# Break in Module timer_tb at ./Timer_1s.sv line 34
+# End time: 20:32:21 on May 10,2020, Elapsed time: 0:00:51
+# Errors: 0, Warnings: 0

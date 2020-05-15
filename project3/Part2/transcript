@@ -1,0 +1,140 @@
+# Reading C:/intelFPGA_lite/17.0/modelsim_ase/tcl/vsim/pref.tcl
+do runlab.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:53:50 on May 10,2020
+# vlog -reportprogress 300 ./Count16P.sv 
+# -- Compiling module Count16P
+# ** Error: ./Count16P.sv(9): (vlog-2110) Illegal reference to net "Q".
+# ** Error: ./Count16P.sv(13): (vlog-2110) Illegal reference to net "Q".
+# ** Error: ./Count16P.sv(15): (vlog-2110) Illegal reference to net "Q".
+# -- Compiling module Count16P_tb
+# End time: 00:53:50 on May 10,2020, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+# ** Error: C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab.do line 7
+# C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "./Count16P.sv""
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:55:53 on May 10,2020
+# vlog -reportprogress 300 ./Count16P.sv 
+# -- Compiling module Count16P
+# -- Compiling module Count16P_tb
+# 
+# Top level modules:
+# 	Count16P_tb
+# End time: 00:55:53 on May 10,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work Count16P_tb 
+# Start time: 00:55:53 on May 10,2020
+# Loading sv_std.std
+# Loading work.Count16P_tb
+# Loading work.Count16P
+# ** Error: (vsim-3033) ./Count16P.sv(18): Instantiation of 'HEX' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /Count16P_tb/DUT File: ./Count16P.sv
+#         Searched libraries:
+#             C:/Users/sakhm/Desktop/TCES330/HW3/Part2/work
+# ** Error: (vsim-3033) ./Count16P.sv(19): Instantiation of 'HEX' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /Count16P_tb/DUT File: ./Count16P.sv
+#         Searched libraries:
+#             C:/Users/sakhm/Desktop/TCES330/HW3/Part2/work
+# ** Error: (vsim-3033) ./Count16P.sv(20): Instantiation of 'HEX' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /Count16P_tb/DUT File: ./Count16P.sv
+#         Searched libraries:
+#             C:/Users/sakhm/Desktop/TCES330/HW3/Part2/work
+# ** Error: (vsim-3033) ./Count16P.sv(21): Instantiation of 'HEX' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /Count16P_tb/DUT File: ./Count16P.sv
+#         Searched libraries:
+#             C:/Users/sakhm/Desktop/TCES330/HW3/Part2/work
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./runlab.do PAUSED at line 12
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:56:17 on May 10,2020
+# vlog -reportprogress 300 ./Count16P.sv 
+# -- Compiling module Count16P
+# -- Compiling module Count16P_tb
+# 
+# Top level modules:
+# 	Count16P_tb
+# End time: 00:56:17 on May 10,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:56:17 on May 10,2020
+# vlog -reportprogress 300 ./HEX.sv 
+# -- Compiling module HEX
+# 
+# Top level modules:
+# 	HEX
+# End time: 00:56:17 on May 10,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work Count16P_tb 
+# Start time: 00:55:53 on May 10,2020
+# Loading sv_std.std
+# Loading work.Count16P_tb
+# Loading work.Count16P
+# ** Error: (vsim-3037) ./Count16P.sv(18): Missing instance name in instantiation of 'HEX'.
+#    Time: 0 ps  Iteration: 0  Instance: /Count16P_tb/DUT File: ./Count16P.sv
+# ** Error: (vsim-3037) ./Count16P.sv(19): Missing instance name in instantiation of 'HEX'.
+#    Time: 0 ps  Iteration: 0  Instance: /Count16P_tb/DUT File: ./Count16P.sv
+# ** Error: (vsim-3037) ./Count16P.sv(20): Missing instance name in instantiation of 'HEX'.
+#    Time: 0 ps  Iteration: 0  Instance: /Count16P_tb/DUT File: ./Count16P.sv
+# ** Error: (vsim-3037) ./Count16P.sv(21): Missing instance name in instantiation of 'HEX'.
+#    Time: 0 ps  Iteration: 0  Instance: /Count16P_tb/DUT File: ./Count16P.sv
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./runlab.do PAUSED at line 13
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:57:04 on May 10,2020
+# vlog -reportprogress 300 ./Count16P.sv 
+# -- Compiling module Count16P
+# -- Compiling module Count16P_tb
+# 
+# Top level modules:
+# 	Count16P_tb
+# End time: 00:57:04 on May 10,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:57:04 on May 10,2020
+# vlog -reportprogress 300 ./HEX.sv 
+# -- Compiling module HEX
+# 
+# Top level modules:
+# 	HEX
+# End time: 00:57:04 on May 10,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work Count16P_tb 
+# Start time: 00:55:53 on May 10,2020
+# Loading sv_std.std
+# Loading work.Count16P_tb
+# Loading work.Count16P
+# Loading work.HEX
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+#                    0   ClrN = 1    Enable = 1   HEX0 =   x
+#                   10   ClrN = 1    Enable = 1   HEX0 =  64
+#                  400   ClrN = 0    Enable = 1   HEX0 =  64
+#                  410   ClrN = 0    Enable = 1   HEX0 = 121
+#                  430   ClrN = 0    Enable = 1   HEX0 =  36
+#                  450   ClrN = 0    Enable = 1   HEX0 =  48
+#                  470   ClrN = 0    Enable = 1   HEX0 =  25
+#                  490   ClrN = 0    Enable = 1   HEX0 =  18
+#                  510   ClrN = 0    Enable = 1   HEX0 =   2
+#                  530   ClrN = 0    Enable = 1   HEX0 = 120
+#                  550   ClrN = 0    Enable = 1   HEX0 =   0
+#                  570   ClrN = 0    Enable = 1   HEX0 =  16
+#                  590   ClrN = 0    Enable = 1   HEX0 =  64
+# ** Note: $stop    : ./Count16P.sv(44)
+#    Time: 600 ps  Iteration: 0  Instance: /Count16P_tb
+# Break in Module Count16P_tb at ./Count16P.sv line 44
+# End time: 00:57:30 on May 10,2020, Elapsed time: 0:01:37
+# Errors: 8, Warnings: 0

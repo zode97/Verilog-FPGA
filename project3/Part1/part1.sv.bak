@@ -1,0 +1,46 @@
+// four bit counter
+
+module part1(Clk, ClrN, En, Q, QN);
+
+	input Clk, ClrN, En;
+	output [3:0] Q, QN;
+
+  //TFFx(Clk, ClrN, T, Q, QN);
+  
+  TFFx u0 (Clk, ClrN, En, Q[0], QN[0]); // leftmost bit (LSB)
+  TFFx u1 (Clk, ClrN, En & Q[0], Q[1], QN[1]);
+  TFFx u2 (Clk, ClrN, En & Q[0] & Q[1], Q[2], QN[2]);
+  TFFx u3 (Clk, ClrN, En & Q[0] & Q[1] & Q[2], Q[3], QN[3]); // rightmost bit (MSB)
+  
+  assign QN = ~Q;
+  
+endmodule
+
+// 
+
+module part1_tb();
+
+	logic Clk, ClrN, En;
+	logic [3:0] Q, QN;
+	
+	part1 DUT(Clk, ClrN, En, Q, QN);
+	
+	//20 ns clock, 
+	//(1/20ns) = 50MHz
+	always begin  	
+		Clk = 0;  	
+		#10;  	
+		Clk = 1;  	
+		#10;  
+	end 
+	
+	initial begin
+		ClrN = 1; En = 1; #400;
+		ClrN = 0; #200;
+	   $stop;
+	end
+	
+	initial $monitor($time,,," ClrN = %b", ClrN,,,, " Enable = %b", En,,, " Q = %d", Q);
+
+endmodule
+

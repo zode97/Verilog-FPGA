@@ -1,0 +1,52 @@
+// in-class example 04/21
+// 1 bit T-ff, for HW3 to start 
+// clr signal which is active low
+
+module TFFx(Clk, ClrN, T, Q, QN);
+
+	input Clk, ClrN, T;
+	output logic Q=0;
+	output QN;
+	
+	always_ff @(posedge Clk) begin
+		if (~ClrN) Q <= 0;
+		else begin
+		       if (T) Q <= ~Q;
+				 else Q <= Q;
+			  end
+	end
+
+	assign QN = ~Q;
+
+endmodule
+
+// testbench
+`timescale 1ns/1ns
+module TFFx_tb();
+
+	logic Clk, ClrN, T;
+	logic Q;
+	logic QN;
+
+	//TFFx(Clk, ClrN, T, Q, QN);
+	TFFx DUT(Clk, ClrN, T, Q, QN);
+	
+	//20 ns clock, 
+	//(1/20ns) = 50MHz
+	always begin  	
+		Clk = 0;  	
+		#10;  	
+		Clk = 1;  	
+		#10;  
+	end 
+	
+	initial begin
+		ClrN =1; T=0; #20;
+		T =1; #20;
+		ClrN =0; #20;
+		$stop;
+	end
+
+	initial $monitor($time,,," ClrN = %b", ClrN,,,, " T = %b", T,,, " Q = %b", Q);
+
+endmodule

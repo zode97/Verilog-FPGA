@@ -1,0 +1,241 @@
+|part1
+KEY[-1] => ~NO_FANOUT~
+KEY[0] => KEY[0].IN1
+SW[0] => SW[0].IN1
+SW[1] => SW[1].IN1
+LEDR[0] <= SW[0].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[1] <= SW[1].DB_MAX_OUTPUT_PORT_TYPE
+LEDG[-1] <= <GND>
+LEDG[0] <= KEY[0].DB_MAX_OUTPUT_PORT_TYPE
+HEX0[0] <= sixteenbitcounter:comb_6.port3
+HEX0[1] <= sixteenbitcounter:comb_6.port3
+HEX0[2] <= sixteenbitcounter:comb_6.port3
+HEX0[3] <= sixteenbitcounter:comb_6.port3
+HEX0[4] <= sixteenbitcounter:comb_6.port3
+HEX0[5] <= sixteenbitcounter:comb_6.port3
+HEX0[6] <= sixteenbitcounter:comb_6.port3
+HEX1[0] <= sixteenbitcounter:comb_6.port4
+HEX1[1] <= sixteenbitcounter:comb_6.port4
+HEX1[2] <= sixteenbitcounter:comb_6.port4
+HEX1[3] <= sixteenbitcounter:comb_6.port4
+HEX1[4] <= sixteenbitcounter:comb_6.port4
+HEX1[5] <= sixteenbitcounter:comb_6.port4
+HEX1[6] <= sixteenbitcounter:comb_6.port4
+HEX2[0] <= sixteenbitcounter:comb_6.port5
+HEX2[1] <= sixteenbitcounter:comb_6.port5
+HEX2[2] <= sixteenbitcounter:comb_6.port5
+HEX2[3] <= sixteenbitcounter:comb_6.port5
+HEX2[4] <= sixteenbitcounter:comb_6.port5
+HEX2[5] <= sixteenbitcounter:comb_6.port5
+HEX2[6] <= sixteenbitcounter:comb_6.port5
+HEX3[0] <= sixteenbitcounter:comb_6.port6
+HEX3[1] <= sixteenbitcounter:comb_6.port6
+HEX3[2] <= sixteenbitcounter:comb_6.port6
+HEX3[3] <= sixteenbitcounter:comb_6.port6
+HEX3[4] <= sixteenbitcounter:comb_6.port6
+HEX3[5] <= sixteenbitcounter:comb_6.port6
+HEX3[6] <= sixteenbitcounter:comb_6.port6
+
+
+|part1|sixteenbitcounter:comb_6
+Clk => Clk.IN16
+ClrN => ClrN.IN16
+En => En.IN1
+HEX00[0] <= HEX:d0.port1
+HEX00[1] <= HEX:d0.port1
+HEX00[2] <= HEX:d0.port1
+HEX00[3] <= HEX:d0.port1
+HEX00[4] <= HEX:d0.port1
+HEX00[5] <= HEX:d0.port1
+HEX00[6] <= HEX:d0.port1
+HEX11[0] <= HEX:d1.port1
+HEX11[1] <= HEX:d1.port1
+HEX11[2] <= HEX:d1.port1
+HEX11[3] <= HEX:d1.port1
+HEX11[4] <= HEX:d1.port1
+HEX11[5] <= HEX:d1.port1
+HEX11[6] <= HEX:d1.port1
+HEX22[0] <= HEX:d2.port1
+HEX22[1] <= HEX:d2.port1
+HEX22[2] <= HEX:d2.port1
+HEX22[3] <= HEX:d2.port1
+HEX22[4] <= HEX:d2.port1
+HEX22[5] <= HEX:d2.port1
+HEX22[6] <= HEX:d2.port1
+HEX33[0] <= HEX:d3.port1
+HEX33[1] <= HEX:d3.port1
+HEX33[2] <= HEX:d3.port1
+HEX33[3] <= HEX:d3.port1
+HEX33[4] <= HEX:d3.port1
+HEX33[5] <= HEX:d3.port1
+HEX33[6] <= HEX:d3.port1
+
+
+|part1|sixteenbitcounter:comb_6|TFFx:u0
+Clk => Q~reg0.CLK
+ClrN => Q.OUTPUTSELECT
+T => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+QN <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part1|sixteenbitcounter:comb_6|TFFx:u1
+Clk => Q~reg0.CLK
+ClrN => Q.OUTPUTSELECT
+T => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+QN <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part1|sixteenbitcounter:comb_6|TFFx:u2
+Clk => Q~reg0.CLK
+ClrN => Q.OUTPUTSELECT
+T => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+QN <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part1|sixteenbitcounter:comb_6|TFFx:u3
+Clk => Q~reg0.CLK
+ClrN => Q.OUTPUTSELECT
+T => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+QN <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part1|sixteenbitcounter:comb_6|HEX:d0
+HEX00[0] <= HEX00.DB_MAX_OUTPUT_PORT_TYPE
+HEX00[1] <= HEX00.DB_MAX_OUTPUT_PORT_TYPE
+HEX00[2] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+HEX00[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+HEX00[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+HEX00[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+HEX00[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part1|sixteenbitcounter:comb_6|TFFx:u4
+Clk => Q~reg0.CLK
+ClrN => Q.OUTPUTSELECT
+T => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+QN <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part1|sixteenbitcounter:comb_6|TFFx:u5
+Clk => Q~reg0.CLK
+ClrN => Q.OUTPUTSELECT
+T => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+QN <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part1|sixteenbitcounter:comb_6|TFFx:u6
+Clk => Q~reg0.CLK
+ClrN => Q.OUTPUTSELECT
+T => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+QN <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part1|sixteenbitcounter:comb_6|TFFx:u7
+Clk => Q~reg0.CLK
+ClrN => Q.OUTPUTSELECT
+T => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+QN <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part1|sixteenbitcounter:comb_6|HEX:d1
+HEX00[0] <= HEX00.DB_MAX_OUTPUT_PORT_TYPE
+HEX00[1] <= HEX00.DB_MAX_OUTPUT_PORT_TYPE
+HEX00[2] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+HEX00[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+HEX00[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+HEX00[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+HEX00[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part1|sixteenbitcounter:comb_6|TFFx:u8
+Clk => Q~reg0.CLK
+ClrN => Q.OUTPUTSELECT
+T => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+QN <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part1|sixteenbitcounter:comb_6|TFFx:u9
+Clk => Q~reg0.CLK
+ClrN => Q.OUTPUTSELECT
+T => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+QN <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part1|sixteenbitcounter:comb_6|TFFx:u10
+Clk => Q~reg0.CLK
+ClrN => Q.OUTPUTSELECT
+T => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+QN <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part1|sixteenbitcounter:comb_6|TFFx:u11
+Clk => Q~reg0.CLK
+ClrN => Q.OUTPUTSELECT
+T => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+QN <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part1|sixteenbitcounter:comb_6|HEX:d2
+HEX00[0] <= HEX00.DB_MAX_OUTPUT_PORT_TYPE
+HEX00[1] <= HEX00.DB_MAX_OUTPUT_PORT_TYPE
+HEX00[2] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+HEX00[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+HEX00[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+HEX00[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+HEX00[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part1|sixteenbitcounter:comb_6|TFFx:u12
+Clk => Q~reg0.CLK
+ClrN => Q.OUTPUTSELECT
+T => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+QN <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part1|sixteenbitcounter:comb_6|TFFx:u13
+Clk => Q~reg0.CLK
+ClrN => Q.OUTPUTSELECT
+T => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+QN <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part1|sixteenbitcounter:comb_6|TFFx:u14
+Clk => Q~reg0.CLK
+ClrN => Q.OUTPUTSELECT
+T => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+QN <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part1|sixteenbitcounter:comb_6|TFFx:u15
+Clk => Q~reg0.CLK
+ClrN => Q.OUTPUTSELECT
+T => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+QN <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part1|sixteenbitcounter:comb_6|HEX:d3
+HEX00[0] <= HEX00.DB_MAX_OUTPUT_PORT_TYPE
+HEX00[1] <= HEX00.DB_MAX_OUTPUT_PORT_TYPE
+HEX00[2] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+HEX00[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+HEX00[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+HEX00[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+HEX00[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+

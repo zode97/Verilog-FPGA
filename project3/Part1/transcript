@@ -1,0 +1,296 @@
+# Reading C:/intelFPGA_lite/17.0/modelsim_ase/tcl/vsim/pref.tcl
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 01:16:28 on May 09,2020
+# vlog -reportprogress 300 ./TFFx.sv 
+# -- Compiling module TFFx
+# -- Compiling module TFFx_tb
+# 
+# Top level modules:
+# 	TFFx_tb
+# End time: 01:16:28 on May 09,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 01:16:28 on May 09,2020
+# vlog -reportprogress 300 ./sixteenbitcounter.sv 
+# -- Compiling module sixteenbitcounter
+# -- Compiling module HEX
+# -- Compiling module sixteenbitcounter_tb
+# 
+# Top level modules:
+# 	sixteenbitcounter_tb
+# End time: 01:16:28 on May 09,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work sixteenbitcounter_tb 
+# Start time: 01:16:28 on May 09,2020
+# Loading sv_std.std
+# Loading work.sixteenbitcounter_tb
+# Loading work.sixteenbitcounter
+# Loading work.TFFx
+# ** Error: (vsim-3037) ./sixteenbitcounter.sv(13): Missing instance name in instantiation of 'HEX'.
+#    Time: 0 ps  Iteration: 0  Instance: /sixteenbitcounter_tb/DUT File: ./sixteenbitcounter.sv
+# ** Error: (vsim-3037) ./sixteenbitcounter.sv(18): Missing instance name in instantiation of 'HEX'.
+#    Time: 0 ps  Iteration: 0  Instance: /sixteenbitcounter_tb/DUT File: ./sixteenbitcounter.sv
+# ** Error: (vsim-3037) ./sixteenbitcounter.sv(23): Missing instance name in instantiation of 'HEX'.
+#    Time: 0 ps  Iteration: 0  Instance: /sixteenbitcounter_tb/DUT File: ./sixteenbitcounter.sv
+# ** Error: (vsim-3037) ./sixteenbitcounter.sv(28): Missing instance name in instantiation of 'HEX'.
+#    Time: 0 ps  Iteration: 0  Instance: /sixteenbitcounter_tb/DUT File: ./sixteenbitcounter.sv
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./runlab.do PAUSED at line 13
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 01:18:37 on May 09,2020
+# vlog -reportprogress 300 ./TFFx.sv 
+# -- Compiling module TFFx
+# -- Compiling module TFFx_tb
+# 
+# Top level modules:
+# 	TFFx_tb
+# End time: 01:18:37 on May 09,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 01:18:37 on May 09,2020
+# vlog -reportprogress 300 ./sixteenbitcounter.sv 
+# -- Compiling module sixteenbitcounter
+# -- Compiling module HEX
+# -- Compiling module sixteenbitcounter_tb
+# 
+# Top level modules:
+# 	sixteenbitcounter_tb
+# End time: 01:18:37 on May 09,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work sixteenbitcounter_tb 
+# Start time: 01:16:28 on May 09,2020
+# Loading sv_std.std
+# Loading work.sixteenbitcounter_tb
+# Loading work.sixteenbitcounter
+# Loading work.TFFx
+# ** Error: (vsim-3037) ./sixteenbitcounter.sv(13): Missing instance name in instantiation of 'HEX'.
+#    Time: 0 ps  Iteration: 0  Instance: /sixteenbitcounter_tb/DUT File: ./sixteenbitcounter.sv
+# ** Error: (vsim-3037) ./sixteenbitcounter.sv(18): Missing instance name in instantiation of 'HEX'.
+#    Time: 0 ps  Iteration: 0  Instance: /sixteenbitcounter_tb/DUT File: ./sixteenbitcounter.sv
+# ** Error: (vsim-3037) ./sixteenbitcounter.sv(23): Missing instance name in instantiation of 'HEX'.
+#    Time: 0 ps  Iteration: 0  Instance: /sixteenbitcounter_tb/DUT File: ./sixteenbitcounter.sv
+# ** Error: (vsim-3037) ./sixteenbitcounter.sv(28): Missing instance name in instantiation of 'HEX'.
+#    Time: 0 ps  Iteration: 0  Instance: /sixteenbitcounter_tb/DUT File: ./sixteenbitcounter.sv
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./runlab.do PAUSED at line 13
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 01:20:59 on May 09,2020
+# vlog -reportprogress 300 ./TFFx.sv 
+# -- Compiling module TFFx
+# -- Compiling module TFFx_tb
+# 
+# Top level modules:
+# 	TFFx_tb
+# End time: 01:20:59 on May 09,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 01:20:59 on May 09,2020
+# vlog -reportprogress 300 ./HEX.sv 
+# -- Compiling module HEX
+# 
+# Top level modules:
+# 	HEX
+# End time: 01:20:59 on May 09,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 01:20:59 on May 09,2020
+# vlog -reportprogress 300 ./sixteenbitcounter.sv 
+# -- Compiling module sixteenbitcounter
+# -- Compiling module HEX
+# -- Compiling module sixteenbitcounter_tb
+# 
+# Top level modules:
+# 	sixteenbitcounter_tb
+# End time: 01:20:59 on May 09,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work sixteenbitcounter_tb 
+# Start time: 01:16:28 on May 09,2020
+# Loading sv_std.std
+# Loading work.sixteenbitcounter_tb
+# Loading work.sixteenbitcounter
+# Loading work.TFFx
+# ** Error: (vsim-3037) ./sixteenbitcounter.sv(13): Missing instance name in instantiation of 'HEX'.
+#    Time: 0 ps  Iteration: 0  Instance: /sixteenbitcounter_tb/DUT File: ./sixteenbitcounter.sv
+# ** Error: (vsim-3037) ./sixteenbitcounter.sv(18): Missing instance name in instantiation of 'HEX'.
+#    Time: 0 ps  Iteration: 0  Instance: /sixteenbitcounter_tb/DUT File: ./sixteenbitcounter.sv
+# ** Error: (vsim-3037) ./sixteenbitcounter.sv(23): Missing instance name in instantiation of 'HEX'.
+#    Time: 0 ps  Iteration: 0  Instance: /sixteenbitcounter_tb/DUT File: ./sixteenbitcounter.sv
+# ** Error: (vsim-3037) ./sixteenbitcounter.sv(28): Missing instance name in instantiation of 'HEX'.
+#    Time: 0 ps  Iteration: 0  Instance: /sixteenbitcounter_tb/DUT File: ./sixteenbitcounter.sv
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./runlab.do PAUSED at line 14
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 01:21:10 on May 09,2020
+# vlog -reportprogress 300 ./TFFx.sv 
+# -- Compiling module TFFx
+# -- Compiling module TFFx_tb
+# 
+# Top level modules:
+# 	TFFx_tb
+# End time: 01:21:10 on May 09,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 01:21:10 on May 09,2020
+# vlog -reportprogress 300 ./HEX.sv 
+# -- Compiling module HEX
+# 
+# Top level modules:
+# 	HEX
+# End time: 01:21:10 on May 09,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 01:21:10 on May 09,2020
+# vlog -reportprogress 300 ./sixteenbitcounter.sv 
+# -- Compiling module sixteenbitcounter
+# -- Compiling module sixteenbitcounter_tb
+# 
+# Top level modules:
+# 	sixteenbitcounter_tb
+# End time: 01:21:10 on May 09,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work sixteenbitcounter_tb 
+# Start time: 01:16:28 on May 09,2020
+# Loading sv_std.std
+# Loading work.sixteenbitcounter_tb
+# Loading work.sixteenbitcounter
+# Loading work.TFFx
+# ** Error: (vsim-3037) ./sixteenbitcounter.sv(13): Missing instance name in instantiation of 'HEX'.
+#    Time: 0 ps  Iteration: 0  Instance: /sixteenbitcounter_tb/DUT File: ./sixteenbitcounter.sv
+# ** Error: (vsim-3037) ./sixteenbitcounter.sv(18): Missing instance name in instantiation of 'HEX'.
+#    Time: 0 ps  Iteration: 0  Instance: /sixteenbitcounter_tb/DUT File: ./sixteenbitcounter.sv
+# ** Error: (vsim-3037) ./sixteenbitcounter.sv(23): Missing instance name in instantiation of 'HEX'.
+#    Time: 0 ps  Iteration: 0  Instance: /sixteenbitcounter_tb/DUT File: ./sixteenbitcounter.sv
+# ** Error: (vsim-3037) ./sixteenbitcounter.sv(28): Missing instance name in instantiation of 'HEX'.
+#    Time: 0 ps  Iteration: 0  Instance: /sixteenbitcounter_tb/DUT File: ./sixteenbitcounter.sv
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./runlab.do PAUSED at line 14
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 01:28:22 on May 09,2020
+# vlog -reportprogress 300 ./TFFx.sv 
+# -- Compiling module TFFx
+# -- Compiling module TFFx_tb
+# 
+# Top level modules:
+# 	TFFx_tb
+# End time: 01:28:22 on May 09,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 01:28:22 on May 09,2020
+# vlog -reportprogress 300 ./HEX.sv 
+# -- Compiling module HEX
+# 
+# Top level modules:
+# 	HEX
+# End time: 01:28:22 on May 09,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 01:28:22 on May 09,2020
+# vlog -reportprogress 300 ./sixteenbitcounter.sv 
+# -- Compiling module sixteenbitcounter
+# -- Compiling module sixteenbitcounter_tb
+# 
+# Top level modules:
+# 	sixteenbitcounter_tb
+# End time: 01:28:23 on May 09,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work sixteenbitcounter_tb 
+# Start time: 01:16:28 on May 09,2020
+# Loading sv_std.std
+# Loading work.sixteenbitcounter_tb
+# Loading work.sixteenbitcounter
+# Loading work.TFFx
+# ** Error: (vsim-3037) ./sixteenbitcounter.sv(13): Missing instance name in instantiation of 'HEX'.
+#    Time: 0 ps  Iteration: 0  Instance: /sixteenbitcounter_tb/DUT File: ./sixteenbitcounter.sv
+# ** Error: (vsim-3037) ./sixteenbitcounter.sv(18): Missing instance name in instantiation of 'HEX'.
+#    Time: 0 ps  Iteration: 0  Instance: /sixteenbitcounter_tb/DUT File: ./sixteenbitcounter.sv
+# ** Error: (vsim-3037) ./sixteenbitcounter.sv(23): Missing instance name in instantiation of 'HEX'.
+#    Time: 0 ps  Iteration: 0  Instance: /sixteenbitcounter_tb/DUT File: ./sixteenbitcounter.sv
+# ** Error: (vsim-3037) ./sixteenbitcounter.sv(28): Missing instance name in instantiation of 'HEX'.
+#    Time: 0 ps  Iteration: 0  Instance: /sixteenbitcounter_tb/DUT File: ./sixteenbitcounter.sv
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./runlab.do PAUSED at line 14
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 01:30:05 on May 09,2020
+# vlog -reportprogress 300 ./TFFx.sv 
+# -- Compiling module TFFx
+# -- Compiling module TFFx_tb
+# 
+# Top level modules:
+# 	TFFx_tb
+# End time: 01:30:05 on May 09,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 01:30:05 on May 09,2020
+# vlog -reportprogress 300 ./HEX.sv 
+# -- Compiling module HEX
+# 
+# Top level modules:
+# 	HEX
+# End time: 01:30:05 on May 09,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 01:30:05 on May 09,2020
+# vlog -reportprogress 300 ./sixteenbitcounter.sv 
+# -- Compiling module sixteenbitcounter
+# -- Compiling module sixteenbitcounter_tb
+# 
+# Top level modules:
+# 	sixteenbitcounter_tb
+# End time: 01:30:05 on May 09,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work sixteenbitcounter_tb 
+# Start time: 01:16:28 on May 09,2020
+# Loading sv_std.std
+# Loading work.sixteenbitcounter_tb
+# Loading work.sixteenbitcounter
+# Loading work.TFFx
+# Loading work.HEX
+# ** Warning: (vsim-3015) ./sixteenbitcounter.sv(28): [PCDPC] - Port size (4) does not match connection size (5) for port 'Q'. The port definition is at: ./HEX.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /sixteenbitcounter_tb/DUT/d3 File: ./HEX.sv
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+#                    0   ClrN = 1    Enable = 1   HEX0 =  64
+#                   10   ClrN = 1    Enable = 1   HEX0 = 121
+#                   30   ClrN = 1    Enable = 1   HEX0 =  36
+#                   50   ClrN = 1    Enable = 1   HEX0 =  48
+#                   70   ClrN = 1    Enable = 1   HEX0 =  25
+#                   90   ClrN = 1    Enable = 1   HEX0 =  18
+#                  110   ClrN = 1    Enable = 1   HEX0 =   2
+#                  130   ClrN = 1    Enable = 1   HEX0 = 120
+#                  150   ClrN = 1    Enable = 1   HEX0 =   0
+#                  170   ClrN = 1    Enable = 1   HEX0 =  16
+#                  190   ClrN = 1    Enable = 1   HEX0 =  64
+#                  330   ClrN = 1    Enable = 1   HEX0 = 121
+#                  350   ClrN = 1    Enable = 1   HEX0 =  36
+#                  370   ClrN = 1    Enable = 1   HEX0 =  48
+#                  390   ClrN = 1    Enable = 1   HEX0 =  25
+#                  400   ClrN = 0    Enable = 1   HEX0 =  25
+#                  410   ClrN = 0    Enable = 1   HEX0 =  64
+# ** Note: $stop    : ./sixteenbitcounter.sv(51)
+#    Time: 600 ps  Iteration: 0  Instance: /sixteenbitcounter_tb
+# Break in Module sixteenbitcounter_tb at ./sixteenbitcounter.sv line 51
+# End time: 01:31:44 on May 09,2020, Elapsed time: 0:15:16
+# Errors: 20, Warnings: 1

@@ -1,0 +1,174 @@
+|part2
+KEY[-1] => ~NO_FANOUT~
+KEY[0] => KEY[0].IN1
+SW[0] => SW[0].IN1
+SW[1] => SW[1].IN1
+LEDR[0] <= SW[0].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[1] <= SW[1].DB_MAX_OUTPUT_PORT_TYPE
+LEDG[-1] <= <GND>
+LEDG[0] <= KEY[0].DB_MAX_OUTPUT_PORT_TYPE
+HEX0[0] <= Count16P:comb_6.port3
+HEX0[1] <= Count16P:comb_6.port3
+HEX0[2] <= Count16P:comb_6.port3
+HEX0[3] <= Count16P:comb_6.port3
+HEX0[4] <= Count16P:comb_6.port3
+HEX0[5] <= Count16P:comb_6.port3
+HEX0[6] <= Count16P:comb_6.port3
+HEX1[0] <= Count16P:comb_6.port4
+HEX1[1] <= Count16P:comb_6.port4
+HEX1[2] <= Count16P:comb_6.port4
+HEX1[3] <= Count16P:comb_6.port4
+HEX1[4] <= Count16P:comb_6.port4
+HEX1[5] <= Count16P:comb_6.port4
+HEX1[6] <= Count16P:comb_6.port4
+HEX2[0] <= Count16P:comb_6.port5
+HEX2[1] <= Count16P:comb_6.port5
+HEX2[2] <= Count16P:comb_6.port5
+HEX2[3] <= Count16P:comb_6.port5
+HEX2[4] <= Count16P:comb_6.port5
+HEX2[5] <= Count16P:comb_6.port5
+HEX2[6] <= Count16P:comb_6.port5
+HEX3[0] <= Count16P:comb_6.port6
+HEX3[1] <= Count16P:comb_6.port6
+HEX3[2] <= Count16P:comb_6.port6
+HEX3[3] <= Count16P:comb_6.port6
+HEX3[4] <= Count16P:comb_6.port6
+HEX3[5] <= Count16P:comb_6.port6
+HEX3[6] <= Count16P:comb_6.port6
+
+
+|part2|Count16P:comb_6
+Clock => Q[0].CLK
+Clock => Q[1].CLK
+Clock => Q[2].CLK
+Clock => Q[3].CLK
+Clock => Q[4].CLK
+Clock => Q[5].CLK
+Clock => Q[6].CLK
+Clock => Q[7].CLK
+Clock => Q[8].CLK
+Clock => Q[9].CLK
+Clock => Q[10].CLK
+Clock => Q[11].CLK
+Clock => Q[12].CLK
+Clock => Q[13].CLK
+Clock => Q[14].CLK
+Clock => Q[15].CLK
+Enable => Q.OUTPUTSELECT
+Enable => Q.OUTPUTSELECT
+Enable => Q.OUTPUTSELECT
+Enable => Q.OUTPUTSELECT
+Enable => Q.OUTPUTSELECT
+Enable => Q.OUTPUTSELECT
+Enable => Q.OUTPUTSELECT
+Enable => Q.OUTPUTSELECT
+Enable => Q.OUTPUTSELECT
+Enable => Q.OUTPUTSELECT
+Enable => Q.OUTPUTSELECT
+Enable => Q.OUTPUTSELECT
+Enable => Q.OUTPUTSELECT
+Enable => Q.OUTPUTSELECT
+Enable => Q.OUTPUTSELECT
+Enable => Q.OUTPUTSELECT
+Clear => Q.OUTPUTSELECT
+Clear => Q.OUTPUTSELECT
+Clear => Q.OUTPUTSELECT
+Clear => Q.OUTPUTSELECT
+Clear => Q.OUTPUTSELECT
+Clear => Q.OUTPUTSELECT
+Clear => Q.OUTPUTSELECT
+Clear => Q.OUTPUTSELECT
+Clear => Q.OUTPUTSELECT
+Clear => Q.OUTPUTSELECT
+Clear => Q.OUTPUTSELECT
+Clear => Q.OUTPUTSELECT
+Clear => Q.OUTPUTSELECT
+Clear => Q.OUTPUTSELECT
+Clear => Q.OUTPUTSELECT
+Clear => Q.OUTPUTSELECT
+HEX00[0] <= HEX:u1.port1
+HEX00[1] <= HEX:u1.port1
+HEX00[2] <= HEX:u1.port1
+HEX00[3] <= HEX:u1.port1
+HEX00[4] <= HEX:u1.port1
+HEX00[5] <= HEX:u1.port1
+HEX00[6] <= HEX:u1.port1
+HEX11[0] <= HEX:u2.port1
+HEX11[1] <= HEX:u2.port1
+HEX11[2] <= HEX:u2.port1
+HEX11[3] <= HEX:u2.port1
+HEX11[4] <= HEX:u2.port1
+HEX11[5] <= HEX:u2.port1
+HEX11[6] <= HEX:u2.port1
+HEX22[0] <= HEX:u3.port1
+HEX22[1] <= HEX:u3.port1
+HEX22[2] <= HEX:u3.port1
+HEX22[3] <= HEX:u3.port1
+HEX22[4] <= HEX:u3.port1
+HEX22[5] <= HEX:u3.port1
+HEX22[6] <= HEX:u3.port1
+HEX33[0] <= HEX:u4.port1
+HEX33[1] <= HEX:u4.port1
+HEX33[2] <= HEX:u4.port1
+HEX33[3] <= HEX:u4.port1
+HEX33[4] <= HEX:u4.port1
+HEX33[5] <= HEX:u4.port1
+HEX33[6] <= HEX:u4.port1
+
+
+|part2|Count16P:comb_6|HEX:u1
+Q[0] => Decoder0.IN3
+Q[1] => Decoder0.IN2
+Q[2] => Decoder0.IN1
+Q[3] => Decoder0.IN0
+HEX00[0] <= HEX00.DB_MAX_OUTPUT_PORT_TYPE
+HEX00[1] <= HEX00.DB_MAX_OUTPUT_PORT_TYPE
+HEX00[2] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+HEX00[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+HEX00[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+HEX00[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+HEX00[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part2|Count16P:comb_6|HEX:u2
+Q[0] => Decoder0.IN3
+Q[1] => Decoder0.IN2
+Q[2] => Decoder0.IN1
+Q[3] => Decoder0.IN0
+HEX00[0] <= HEX00.DB_MAX_OUTPUT_PORT_TYPE
+HEX00[1] <= HEX00.DB_MAX_OUTPUT_PORT_TYPE
+HEX00[2] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+HEX00[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+HEX00[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+HEX00[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+HEX00[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part2|Count16P:comb_6|HEX:u3
+Q[0] => Decoder0.IN3
+Q[1] => Decoder0.IN2
+Q[2] => Decoder0.IN1
+Q[3] => Decoder0.IN0
+HEX00[0] <= HEX00.DB_MAX_OUTPUT_PORT_TYPE
+HEX00[1] <= HEX00.DB_MAX_OUTPUT_PORT_TYPE
+HEX00[2] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+HEX00[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+HEX00[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+HEX00[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+HEX00[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part2|Count16P:comb_6|HEX:u4
+Q[0] => Decoder0.IN3
+Q[1] => Decoder0.IN2
+Q[2] => Decoder0.IN1
+Q[3] => Decoder0.IN0
+HEX00[0] <= HEX00.DB_MAX_OUTPUT_PORT_TYPE
+HEX00[1] <= HEX00.DB_MAX_OUTPUT_PORT_TYPE
+HEX00[2] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+HEX00[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+HEX00[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+HEX00[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+HEX00[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+

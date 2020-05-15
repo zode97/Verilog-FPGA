@@ -1,0 +1,71 @@
+|part4
+KEY[0] => _.IN1
+CLOCK_50 => CLOCK_50.IN1
+HEX0[0] << HEX:d1.port1
+HEX0[1] << HEX:d1.port1
+HEX0[2] << HEX:d1.port1
+HEX0[3] << HEX:d1.port1
+HEX0[4] << HEX:d1.port1
+HEX0[5] << HEX:d1.port1
+HEX0[6] << HEX:d1.port1
+LEDG[8] << <VCC>
+
+
+|part4|adjust_clock:comb_4
+Clock => counter[0].CLK
+Clock => counter[1].CLK
+Clock => counter[2].CLK
+Clock => counter[3].CLK
+Clock => counter[4].CLK
+Clock => counter[5].CLK
+Clock => counter[6].CLK
+Clock => counter[7].CLK
+Clock => counter[8].CLK
+Clock => counter[9].CLK
+Clock => counter[10].CLK
+Clock => counter[11].CLK
+Clock => counter[12].CLK
+Clock => counter[13].CLK
+Clock => counter[14].CLK
+Clock => counter[15].CLK
+Clock => counter[16].CLK
+Clock => counter[17].CLK
+Clock => counter[18].CLK
+Clock => counter[19].CLK
+Clock => counter[20].CLK
+Clock => counter[21].CLK
+Clock => counter[22].CLK
+Clock => counter[23].CLK
+Clock => counter[24].CLK
+ad_clk <= counter[24].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part4|Timer_1s:u1
+Clr => Q.OUTPUTSELECT
+Clr => Q.OUTPUTSELECT
+Clr => Q.OUTPUTSELECT
+Clr => Q.OUTPUTSELECT
+Clock => Q[0]~reg0.CLK
+Clock => Q[1]~reg0.CLK
+Clock => Q[2]~reg0.CLK
+Clock => Q[3]~reg0.CLK
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part4|HEX:d1
+Q[0] => Decoder0.IN3
+Q[1] => Decoder0.IN2
+Q[2] => Decoder0.IN1
+Q[3] => Decoder0.IN0
+HEX00[0] <= HEX00.DB_MAX_OUTPUT_PORT_TYPE
+HEX00[1] <= HEX00.DB_MAX_OUTPUT_PORT_TYPE
+HEX00[2] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+HEX00[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+HEX00[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+HEX00[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+HEX00[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+

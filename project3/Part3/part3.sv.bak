@@ -1,0 +1,22 @@
+module part3( Clock, Enable, Clear, HEX00, HEX11, HEX22, HEX33);
+	input Clock; // 50 MHz System Clock
+	input Enable; // Output of 1 sec timer
+	input Clear;
+	output logic [6:0] HEX00, HEX11, HEX22, HEX33;
+	logic [15:0]Q; // the count
+	always @ ( posedge Clock ) begin
+		if ( Clear ) begin
+				Q <= 0;
+		end
+		else if ( Enable ) begin
+			if ( Q == 16'h270F )
+				Q <= 0;
+			else
+				Q <= Q + 16'b1;
+		end // end enable
+	end // always
+	HEX u1(Q[3:0], HEX00);
+	HEX u2(Q[7:4], HEX11);
+	HEX u3(Q[11:8], HEX22);
+	HEX u4(Q[15:12], HEX33);
+endmodule

@@ -1,0 +1,82 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/sakhm/Desktop/TCES330/HW3/Part2
+vCount16P
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1589097424
+!i10b 1
+!s100 mzPk_^b:fbQBSS`ef@GUi3
+I1EgoWMmj2_VKbcE;ndI^?2
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 !s105 Count16P_sv_unit
+S1
+R0
+Z5 w1589097412
+Z6 8./Count16P.sv
+Z7 F./Count16P.sv
+L0 1
+Z8 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z9 !s108 1589097424.000000
+Z10 !s107 ./Count16P.sv|
+Z11 !s90 -reportprogress|300|./Count16P.sv|
+!i113 1
+Z12 tCvgOpt 0
+n@count16@p
+vCount16P_tb
+R1
+R2
+!i10b 1
+!s100 GKC9]LgZ@41Eb1L>;3<Im2
+IzYU[@@Jg39g0kzU1h6:nT1
+R3
+R4
+S1
+R0
+R5
+R6
+R7
+L0 25
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+n@count16@p_tb
+vHEX
+R1
+R2
+!i10b 1
+!s100 THL1;U0AZ7R;lNi27bC6B0
+I2zb8MfAOS]dD;]0T5:5Y53
+R3
+!s105 HEX_sv_unit
+S1
+R0
+w1589097280
+8./HEX.sv
+F./HEX.sv
+L0 1
+R8
+r1
+!s85 0
+31
+R9
+!s107 ./HEX.sv|
+!s90 -reportprogress|300|./HEX.sv|
+!i113 1
+R12
+n@h@e@x

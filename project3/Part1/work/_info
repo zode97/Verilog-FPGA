@@ -1,0 +1,128 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/sakhm/Desktop/TCES330/HW3/Part1
+vHEX
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1589013005
+!i10b 1
+!s100 UJaGlO2;3b>WoO]VDn@GH2
+I>J^iYR?7P`fgXV]JZc=az1
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+!s105 HEX_sv_unit
+S1
+R0
+w1589012442
+8./HEX.sv
+F./HEX.sv
+L0 1
+Z4 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z5 !s108 1589013005.000000
+!s107 ./HEX.sv|
+!s90 -reportprogress|300|./HEX.sv|
+!i113 1
+Z6 tCvgOpt 0
+n@h@e@x
+vsixteenbitcounter
+R1
+R2
+!i10b 1
+!s100 oaeKJ_Dij1@1[5W7c;UZh0
+IH1BXX0n^7;zd]gAhZXJfh2
+R3
+Z7 !s105 sixteenbitcounter_sv_unit
+S1
+R0
+Z8 w1589012997
+Z9 8./sixteenbitcounter.sv
+Z10 F./sixteenbitcounter.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+Z11 !s107 ./sixteenbitcounter.sv|
+Z12 !s90 -reportprogress|300|./sixteenbitcounter.sv|
+!i113 1
+R6
+vsixteenbitcounter_tb
+R1
+R2
+!i10b 1
+!s100 `l[P4YzzTnG000aJ^mjig2
+I_eo4D4DgJGODL82DCcYcJ2
+R3
+R7
+S1
+R0
+R8
+R9
+R10
+L0 32
+R4
+r1
+!s85 0
+31
+R5
+R11
+R12
+!i113 1
+R6
+vTFFx
+R1
+R2
+!i10b 1
+!s100 >Y66]gXnkA=4fnCP=B<IH1
+IKj7TfZSVJ8cjP0Zg`_fRZ0
+R3
+Z13 !s105 TFFx_sv_unit
+S1
+R0
+Z14 w1589000481
+Z15 8./TFFx.sv
+Z16 F./TFFx.sv
+L0 5
+R4
+r1
+!s85 0
+31
+R5
+Z17 !s107 ./TFFx.sv|
+Z18 !s90 -reportprogress|300|./TFFx.sv|
+!i113 1
+R6
+n@t@f@fx
+vTFFx_tb
+R1
+R2
+!i10b 1
+!s100 io`C6NSOn:1ONjk8UN;<^1
+I`?1<5?3:^_jDYBn_]YoI[1
+R3
+R13
+S1
+R0
+R14
+R15
+R16
+L0 25
+R4
+r1
+!s85 0
+31
+R5
+R17
+R18
+!i113 1
+R6
+n@t@f@fx_tb

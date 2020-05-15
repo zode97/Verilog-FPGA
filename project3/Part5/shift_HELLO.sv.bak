@@ -1,0 +1,46 @@
+module Timer_1s( Clock, HEX00);
+	input Clock; // 50 MHz System Clock
+	output logic [6:0]HEX00; // One pulse per second
+	reg [3:0]Q; // Count
+	parameter MaxCount = 9;
+	always @( posedge Clock) begin
+		if ( Q == MaxCount ) begin // time to do something
+			Q <= 0;
+		end
+		else Q <= Q + 1'b1;
+	end
+	HEX d1(Q, HEX00);
+endmodule
+
+module timer_tb();
+	logic Clock;
+	logic [6:0] HEX00;
+	
+	Timer_1s DUT(Clock, HEX00);
+	
+	//20 ns clock, 
+	//(1/20ns) = 50MHz
+	always begin  	
+		Clock = 0;  	
+		#10;  	
+		Clock = 1;  	
+		#10; 
+		Clock = 2;  	
+		#10;
+		Clock = 3;  	
+		#10;
+		Clock = 4;  	
+		#10;
+		Clock = 5;  	
+		#10;
+		Clock = 6;  	
+		#10;
+		Clock = 7;  	
+		#10;
+		Clock = 8;  	
+		#10;
+		Clock = 9;  	
+		#10;	
+	end
+
+endmodule

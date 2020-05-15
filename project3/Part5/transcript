@@ -1,0 +1,25 @@
+# Reading C:/intelFPGA_lite/17.0/modelsim_ase/tcl/vsim/pref.tcl
+do runlab.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:43:57 on May 10,2020
+# vlog -reportprogress 300 ./Shift_HELLO.sv 
+# -- Compiling module shift_HELLO
+# -- Compiling module shift_tb
+# 
+# Top level modules:
+# 	shift_tb
+# End time: 20:43:57 on May 10,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work shift_tb 
+# Start time: 20:43:57 on May 10,2020
+# Loading sv_std.std
+# Loading work.shift_tb
+# Loading work.shift_HELLO
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./Shift_HELLO.sv(32)
+#    Time: 600 ps  Iteration: 0  Instance: /shift_tb
+# Break in Module shift_tb at ./Shift_HELLO.sv line 32
+# End time: 20:45:23 on May 10,2020, Elapsed time: 0:01:26
+# Errors: 0, Warnings: 0

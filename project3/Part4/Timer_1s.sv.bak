@@ -1,0 +1,16 @@
+module Timer_1s( Clock, Out );
+	input Clock; // 50 MHz System Clock
+	output reg Out; // One pulse per second
+	reg [25:0]Q; // Count
+	parameter MaxCount = 50_000_000 - 1;
+	always @( posedge Clock ) begin
+		if ( Q == MaxCount ) begin // time to do something
+			Q <= 0;
+			Out <= 1'b1;
+		end
+		else begin // just count
+			Q <= Q + 1'b1;
+			Out <= 1'b0;
+		end
+	end
+endmodule

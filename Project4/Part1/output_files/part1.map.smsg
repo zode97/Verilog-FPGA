@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at FSM.sv(75): always construct contains both blocking and non-blocking assignments File: C:/Users/sakhm/Desktop/git/Verilog-FPGA/Project4/Part1/FSM.sv Line: 75

@@ -1,12 +1,12 @@
 
-State Machine - |part1|CurrentState
-Name CurrentState.H CurrentState.G CurrentState.F CurrentState.E CurrentState.D CurrentState.C CurrentState.B CurrentState.A CurrentState.I 
-CurrentState.A 0 0 0 0 0 0 0 0 0 
-CurrentState.B 0 0 0 0 0 0 1 1 0 
-CurrentState.C 0 0 0 0 0 1 0 1 0 
-CurrentState.D 0 0 0 0 1 0 0 1 0 
-CurrentState.E 0 0 0 1 0 0 0 1 0 
-CurrentState.F 0 0 1 0 0 0 0 1 0 
-CurrentState.G 0 1 0 0 0 0 0 1 0 
-CurrentState.H 1 0 0 0 0 0 0 1 0 
-CurrentState.I 0 0 0 0 0 0 0 1 1 
+State Machine - |part1|FSM:u|CurrentState
+Name CurrentState~5 CurrentState~4 CurrentState~3 CurrentState~2 
+CurrentState.A 0 0 0 0 
+CurrentState.B 0 0 0 1 
+CurrentState.C 0 0 1 0 
+CurrentState.D 0 0 1 1 
+CurrentState.E 0 1 0 0 
+CurrentState.F 0 1 0 1 
+CurrentState.G 0 1 1 0 
+CurrentState.H 0 1 1 1 
+CurrentState.I 1 0 0 0 

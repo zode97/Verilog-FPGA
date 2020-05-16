@@ -1,12 +1,13 @@
-module FSM ( Clk, reset, w, z );
+module FSM ( Clk, reset, w, z, HEX00);
 	input Clk;
 	input reset, w;
-	output logic z;	
+	output logic z;
+	output [6:0] HEX00;
 	logic [3:0] NextState;
 	localparam  A = 4'h0, // state names
 		    B = 4'h1,
 		    C = 4'h2,
-          	    D = 4'h3,
+         	    D = 4'h3,
 		    E = 4'h4,
 		    F = 4'h5,
 		    G = 4'h6,
@@ -71,16 +72,31 @@ module FSM ( Clk, reset, w, z );
 		end
 	end // state_table
 	
-	
-	flipflop u(Clk, CurrentState, z);
+	always_ff @( posedge Clk ) begin
+			CurrentState <= NextState;   // go to the state we set
+   	end  // always
+	assign z = CurrentState;
+	HEX(CurrentState, HEX00);
 endmodule
 
-module flipflop(clk, in, out);
-	input clk;
-	input [3:0]in;
-	output logic [3:0]out;
-	always_ff @(posedge clk) 
-		out <= in; 
+module HEX(Q, HEX00);
+	//4bit value to BCD
+	input [3:0]Q;
+	output logic[6:0]HEX00;
+	always @(*) begin
+		case (Q)
+		  4'b0000 : HEX00 = 7'b1000000;// 0
+		  4'b0001 : HEX00 = 7'b1111001;// 1
+		  4'b0010 : HEX00 = 7'b0100100;// 2
+		  4'b0011 : HEX00 = 7'b0110000;// 3 
+		  4'b0100 : HEX00 = 7'b0011001;// 4
+		  4'b0101 : HEX00 = 7'b0010010;// 5
+		  4'b0110 : HEX00 = 7'b0000010;// 6
+		  4'b0111 : HEX00 = 7'b1111000;// 7
+		  4'b1000 : HEX00 = 7'b0000000;// 8
+		  default : HEX00 = 7'b1000000;// 0
+		endcase
+	end
 endmodule
 //********************************************//
 //                 Testbench	                //
@@ -89,19 +105,18 @@ endmodule
 module FSM_tb();
 	logic Clk, reset, w;
 	logic z;
+	logic [6:0] HEX00;
 
 	always begin  // 50 MHz Clock
 	  Clk = 0; #25;
 	  Clk = 1'b1;#25;
 	end
   //reset if active high
-  FSM DUT( Clk, reset, w, z );
-  //flipflop DUT1(Clk, w, z);
+  FSM DUT( Clk, reset, w, z, HEX00);
   initial begin
     // generate your input sequence
 		reset =0; w = 0; #120; //edge case
-			  w = 1; #50;
-			
+			  w = 1; #50;			
 		reset =1; w = 0; #200; //edge case
 			  w = 1; #200;
 			  w = 0; #100;

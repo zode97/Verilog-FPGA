@@ -1,4 +1,24 @@
 |part1
+SW[0] <> FSM:u.port1
+SW[1] <> FSM:u.port2
+KEY[0] <> FSM:u.port0
+LEDG[0] <= FSM:u.port3
+LEDR[0] <= LEDR[0].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[1] <= LEDR[1].DB_MAX_OUTPUT_PORT_TYPE
+HEX0[0] <= HEX:u1.port1
+HEX0[1] <= HEX:u1.port1
+HEX0[2] <= HEX:u1.port1
+HEX0[3] <= HEX:u1.port1
+HEX0[4] <= HEX:u1.port1
+HEX0[5] <= HEX:u1.port1
+HEX0[6] <= HEX:u1.port1
+
+
+|part1|FSM:u
+Clk => temp[0]~reg0.CLK
+Clk => temp[1]~reg0.CLK
+Clk => temp[2]~reg0.CLK
+Clk => temp[3]~reg0.CLK
 Clk => CurrentState~1.DATAIN
 reset => NextState.B.OUTPUTSELECT
 reset => NextState.C.OUTPUTSELECT
@@ -17,6 +37,24 @@ w => Selector0.IN1
 w => NextState.DATAB
 w => NextState.DATAB
 w => Selector1.IN1
-z <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+z <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+temp[0] <= temp[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+temp[1] <= temp[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+temp[2] <= temp[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+temp[3] <= temp[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part1|HEX:u1
+Q[0] => Decoder0.IN3
+Q[1] => Decoder0.IN2
+Q[2] => Decoder0.IN1
+Q[3] => Decoder0.IN0
+HEX00[0] <= HEX00.DB_MAX_OUTPUT_PORT_TYPE
+HEX00[1] <= HEX00.DB_MAX_OUTPUT_PORT_TYPE
+HEX00[2] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+HEX00[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+HEX00[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+HEX00[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+HEX00[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
 
 

@@ -1,12 +1,13 @@
-module FSM ( Clk, reset, w, z );
+module FSM ( Clk, reset, w, z, temp);
 	input Clk;
 	input reset, w;
-	output logic z;	
+	output logic z;
 	logic [3:0] NextState;
+	output logic [3:0] temp;
 	localparam  A = 4'h0, // state names
 		    B = 4'h1,
 		    C = 4'h2,
-          	    D = 4'h3,
+          D = 4'h3,
 		    E = 4'h4,
 		    F = 4'h5,
 		    G = 4'h6,
@@ -73,11 +74,9 @@ module FSM ( Clk, reset, w, z );
 	
 	always_ff @( posedge Clk ) begin
 			CurrentState <= NextState;   // go to the state we set
+			temp  = CurrentState;
    	end  // always
-	always @(*) begin
-		if (E || I) z = 1;
-		else z=0;
-	end
+	assign z = CurrentState;
 endmodule
 
 //********************************************//
@@ -87,13 +86,13 @@ endmodule
 module FSM_tb();
 	logic Clk, reset, w;
 	logic z;
-
+	logic [3:0]temp;
 	always begin  // 50 MHz Clock
 	  Clk = 0; #25;
 	  Clk = 1'b1;#25;
 	end
   //reset if active high
-  FSM DUT( Clk, reset, w, z );
+  FSM DUT( Clk, reset, w, z, temp);
   initial begin
     // generate your input sequence
 		reset =0; w = 0; #120; //edge case
